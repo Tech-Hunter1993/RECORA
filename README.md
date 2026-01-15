@@ -32,6 +32,9 @@ It enables reliable video recording with Picture-in-Picture (PiP) support and a 
 - Target Android: 14 (API 34)
 
 ---
+## 📥 Download
+
+👉 [Download RECORA v1.3 APK](https://github.com/<your-username>/RECORA/releases/download/v1.3/RECORA_release_v1.3.apk)
 
 ## Build
 ```bash
