@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="18dp"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/tvStatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Status: Stopped"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+
+  <TextView
+    android:id="@+id/tvTimer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Elapsed: 00:00"
+    android:layout_marginTop="8dp"
+    android:textSize="16sp"/>
+
+  <CheckBox
+    android:id="@+id/cbAudio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Record audio"
+    android:layout_marginTop="12dp"
+    android:checked="true"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/btnStart"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Start Recording"/>
+
+    <Button
+      android:id="@+id/btnStop"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginStart="12dp"
+      android:text="Stop Recording"/>
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/btnPip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:text="Minimize to smallest PiP (while recording)"/>
+
+  <TextView
+    android:id="@+id/tvNote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:text="Samsung devices may block background camera frames. This build keeps a visible preview (and optional PiP) so recording produces valid video. Notification remains visible while recording."
+    android:textSize="13sp"/>
+</LinearLayout>

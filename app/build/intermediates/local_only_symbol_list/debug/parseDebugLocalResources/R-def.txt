@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+id btnLock
+id btnPip
+id btnStart
+id btnStop
+id btnUnlock
+id cbAudio
+id lockOverlay
+id previewView
+id topBar
+id tvNote
+id tvOverlay
+id tvStatus
+id tvTimer
+layout activity_main
+layout activity_recorder
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Theme.MaterialComponents.DayNight.NoActionBar

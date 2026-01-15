@@ -1,0 +1,7 @@
+#Thu Jan 15 12:32:17 IST 2026
+base.0=C\:\\Users\\Work5\\Downloads\\MyRecorder_Samsung_Compliant_Fix_v31\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+base.1=C\:\\Users\\Work5\\Downloads\\MyRecorder_Samsung_Compliant_Fix_v31\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

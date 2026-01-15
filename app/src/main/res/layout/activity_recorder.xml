@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.camera.view.PreviewView
+    android:id="@+id/previewView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <!-- Top overlay controls -->
+  <LinearLayout
+    android:id="@+id/topBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="12dp"
+    android:background="#66000000"
+    android:gravity="center_vertical">
+
+    <TextView
+      android:id="@+id/tvOverlay"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Recording… Use PiP to minimize."
+      android:textSize="14sp"
+      android:textColor="#FFFFFF"/>
+
+    <Button
+      android:id="@+id/btnLock"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Lock"
+      android:minHeight="0dp"
+      android:minWidth="0dp"
+      android:paddingLeft="14dp"
+      android:paddingRight="14dp"/>
+  </LinearLayout>
+
+  <!-- Full-screen touch blocker when locked -->
+  <FrameLayout
+    android:id="@+id/lockOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:visibility="gone">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Screen locked\nTap UNLOCK to interact"
+      android:textColor="#FFFFFF"
+      android:textSize="16sp"
+      android:padding="16dp"
+      android:layout_gravity="center"
+      android:background="#88000000"/>
+
+    <Button
+      android:id="@+id/btnUnlock"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="UNLOCK"
+      android:layout_gravity="bottom|center_horizontal"
+      android:layout_marginBottom="28dp"
+      android:paddingLeft="22dp"
+      android:paddingRight="22dp"/>
+  </FrameLayout>
+
+</FrameLayout>
